@@ -5,6 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-<p>hui</p>
+<a href = "lab1/laba1.html">laba1</a>
 </body>
 </html>
