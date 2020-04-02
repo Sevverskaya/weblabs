@@ -1,0 +1,78 @@
+
+.main{
+    width: 800px;
+    min-height: 10px;
+    margin: 0 auto;
+}
+
+.main a{
+    background-color: #2f3742;
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .3s .2s;
+    -webkit-background-clip: text;
+}
+
+.main a:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .1s 0s;
+}
+
+.p-header{
+    color: #2f3742;
+    font-family: Courier, monospace;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.left-img {
+    float:left;
+    margin: 17px 7px 7px 5px;
+    width: 200px;
+    height: 200px;
+    outline-offset: 3px;
+    outline: 2px solid #10b67e;
+
+}
+
+.content-table{
+    float: right;
+    margin: 17px 0px 7px 5px;
+    width: 550px;
+    text-decoration-color: #2f3742;
+    font-family: Times;
+    font-style: italic;
+    font-size: 120%;
+
+}
+
+.content-table td {
+    width: 50%;
+    height: 50px;
+}
+
+.content-table i{
+    color: #2f3742;
+}
+
+.text {
+    font-family: Courier, monospace;
+    text-align: justify;
+}
+
+.education{
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+.experience {
+    float: right;
+    width: 300px;
+}
+
+
