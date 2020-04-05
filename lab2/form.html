@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <title>Registration</title>
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     <script
             src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -15,15 +18,15 @@
 <body class="back">
 
 <div class="form-wrap" align="center">
-    <div class="head">
-        <p>Регистрация</p>
-    </div>
-    <form>
+    <form id="registration">
+        <div class="head">
+            <p>Регистрация</p>
+        </div>
         <div class="group">
-        <input type="text" name="lastname" required>
-        <span class="bar"></span>
-        <label>Фамилия</label>
-    </div>
+            <input type="text" name="lastname" required>
+            <span class="bar"></span>
+            <label>Фамилия</label>
+        </div>
         <div class="group">
             <input type="text" name="firstname" required>
             <span class="bar"></span>
@@ -34,11 +37,19 @@
             <span class="bar"></span>
             <label>Отчество</label>
         </div>
-<!--        <div class="group">
-            <p>Пол: </p><p>
-                <input type="radio" name="sex" value="женский" checked> Женский <input type="radio" name="sex" value="мужской"> Мужской
-            </p>
-        </div>-->
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline1"> Женский </label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline2"> Мужской </label>
+        </div>
+        <!--        <div class="group">
+                    <p>Пол: </p><p>
+                        <input type="radio" name="sex" value="женский" checked> Женский <input type="radio" name="sex" value="мужской"> Мужской
+                    </p>
+                </div>-->
 
         <div class="group">
             <input type="email" name="email" required>
@@ -60,16 +71,7 @@
             <span class="bar"></span>
             <label>Повторите пароль</label>
         </div>
-
-
-        <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
-            <label class="custom-control-label" for="defaultInline1"> Женский </label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-            <label class="custom-control-label" for="defaultInline2"> Мужской </label>
-        </div>
+        <button type="button" class="btn btn-success">Зарегистрироваться</button>
 
 
 

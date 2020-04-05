@@ -1,15 +1,12 @@
 .form-wrap {
     width: 400px;
-    height: 550px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 800px;
-    margin: auto;
+    min-height: 550px;
     border-radius: 0.5em;
     background: white;
     border: #5264AE solid 3px;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-top: 20px;
 }
 
 .back {
@@ -44,7 +41,7 @@
     margin-bottom:20px;
 }
 
-input {
+.group input {
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
@@ -53,11 +50,11 @@ input {
     border-bottom:1px solid #757575;
 }
 
-input:focus {
+.group input:focus {
     outline:none;
 }
 
-label {
+.group label {
     color:#999;
     font-size:18px;
     font-weight:normal;
@@ -69,7 +66,7 @@ label {
 }
 
 /*Родственные селекторы*/
-input:focus ~ label, input:valid ~ label     {
+.group input:focus ~ label, .group input:valid ~ label     {
     top:-20px;
     font-size:14px;
     color:#5264AE;
@@ -102,8 +99,12 @@ input:focus ~ label, input:valid ~ label     {
 }
 
 /* active state */
-input:focus ~ .bar:before,
-input:focus ~ .bar:after {
+.group input:focus ~ .bar:before,
+.group input:focus ~ .bar:after {
     width:50%;
+}
+
+#registration button{
+    margin-bottom: 20px;
 }
 
