@@ -14,55 +14,65 @@
 </head>
 <body class="back">
 
-<div class="form-wrap">
-    <div>
+<div class="form-wrap" align="center">
+    <div class="head">
         <p>Регистрация</p>
     </div>
     <form>
         <div class="group">
-            <input type="text" required>
-            <span class="bar"></span>
-            <label>Фамилия</label>
-        </div>
+        <input type="text" name="lastname" required>
+        <span class="bar"></span>
+        <label>Фамилия</label>
+    </div>
         <div class="group">
-            <input type="text" required>
+            <input type="text" name="firstname" required>
             <span class="bar"></span>
             <label>Имя</label>
         </div>
         <div class="group">
-            <input type="text" required>
+            <input type="text" name="patronymic" required>
             <span class="bar"></span>
             <label>Отчество</label>
         </div>
 <!--        <div class="group">
-            <p><label> Пол
-                <input type="radio" name="sex" value="женский"> Женский
-            </label>
-             <label>
-                 <input type="radio" name="sex" value="мужской"> Мужской
-             </label>
+            <p>Пол: </p><p>
+                <input type="radio" name="sex" value="женский" checked> Женский <input type="radio" name="sex" value="мужской"> Мужской
             </p>
         </div>-->
+
         <div class="group">
-            <input type="text" required>
+            <input type="email" name="email" required>
             <span class="bar"></span>
             <label>E-mail</label>
         </div>
         <div class="group">
-            <input type="text" required>
+            <input type="text" name="login" required>
             <span class="bar"></span>
             <label>Логин</label>
         </div>
         <div class="group">
-            <input type="text" required>
+            <input type="password" name="password" required>
             <span class="bar"></span>
             <label>Пароль</label>
         </div>
         <div class="group">
-            <input type="text" required>
+            <input type="password" name="password2" required>
             <span class="bar"></span>
             <label>Повторите пароль</label>
         </div>
+
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline1"> Женский </label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline2"> Мужской </label>
+        </div>
+
+
+
         <!--<div class="md-form">
         <p><label> Фамилия <input class="form-control" type="text" name="lastname"></label></p>
         <p><label> Имя <input class="form-control" type="text" name="firstname"></label></p>

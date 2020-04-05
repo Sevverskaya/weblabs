@@ -5,19 +5,25 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 800px;
     margin: auto;
     border-radius: 0.5em;
-    background: transparent;
-    border: #523497 solid 2px;
+    background: white;
+    border: #5264AE solid 3px;
 }
 
 .back {
     background-attachment: fixed;
     background-size: cover;
-    background-image: linear-gradient(to top, #523497 0%, #79BBFB 15%), url("https://audit-invest.com.ua/wp-content/uploads/2017/05/Savin-NY-Website-Background-Web1.jpg");
-    background-blend-mode: exclusion;
+    background-image: linear-gradient(to top, #523497 0%, #79BBFB 15%), url("https://sun9-9.userapi.com/c858020/v858020671/1c02bb/nPIdGs2CGrU.jpg");
+    background-blend-mode: multiply;
 }
+
+.head {
+    font-family: "Bookman Old Style";
+    margin: 15px auto;
+    max-width: 100px;
+ }
 
 /*.input {
     display:block;
@@ -35,7 +41,7 @@
 
 .group {
     position:relative;
-    margin-bottom:45px;
+    margin-bottom:20px;
 }
 
 input {
@@ -57,7 +63,7 @@ label {
     font-weight:normal;
     position:absolute;
     pointer-events:none;
-    left:5px;
+    left:50px;
     top:10px;
     transition:0.2s ease all;
 }
@@ -100,3 +106,4 @@ input:focus ~ .bar:before,
 input:focus ~ .bar:after {
     width:50%;
 }
+
