@@ -14,84 +14,88 @@
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous">
     </script>
+    <!--<script src="script.js"></script>-->
 </head>
 <body class="back">
 
 <div class="form-wrap" align="center">
-    <form id="registration">
+    <form name="registration" onsubmit="return check()">
         <div class="head">
             <p>Регистрация</p>
         </div>
+
         <div class="group">
-            <input type="text" name="lastname" required>
+            <input type="text" name="lastname">
             <span class="bar"></span>
             <label>Фамилия</label>
         </div>
+
         <div class="group">
-            <input type="text" name="firstname" required>
+            <input type="text" name="firstname">
             <span class="bar"></span>
             <label>Имя</label>
         </div>
+
         <div class="group">
-            <input type="text" name="patronymic" required>
+            <input type="text" name="patronymic">
             <span class="bar"></span>
             <label>Отчество</label>
         </div>
+
         <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample"
+                   checked>
             <label class="custom-control-label" for="defaultInline1"> Женский </label>
         </div>
+
         <div class="custom-control custom-radio custom-control-inline">
             <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
             <label class="custom-control-label" for="defaultInline2"> Мужской </label>
         </div>
-        <!--        <div class="group">
-                    <p>Пол: </p><p>
-                        <input type="radio" name="sex" value="женский" checked> Женский <input type="radio" name="sex" value="мужской"> Мужской
-                    </p>
-                </div>-->
 
         <div class="group">
-            <input type="email" name="email" required>
+            <input type="text" name="email">
             <span class="bar"></span>
             <label>E-mail</label>
         </div>
+
         <div class="group">
-            <input type="text" name="login" required>
+            <input type="text" name="login">
             <span class="bar"></span>
             <label>Логин</label>
         </div>
+
         <div class="group">
-            <input type="password" name="password" required>
+            <input type="password" name="password">
             <span class="bar"></span>
             <label>Пароль</label>
         </div>
+
         <div class="group">
-            <input type="password" name="password2" required>
+            <input type="password" name="password2">
             <span class="bar"></span>
             <label>Повторите пароль</label>
         </div>
-        <button type="button" class="btn btn-success">Зарегистрироваться</button>
 
+        <button type="submit" class="btn btn-success">Зарегистрироваться</button>
 
-
-        <!--<div class="md-form">
-        <p><label> Фамилия <input class="form-control" type="text" name="lastname"></label></p>
-        <p><label> Имя <input class="form-control" type="text" name="firstname"></label></p>
-        <p><label> Отчество <input class="form-control form-control-sm" type="text" name="patronymic"></label></p>
-        <p><label> Пол
-             <input type="radio" name="sex" value="женский"> Женский
-        </label>
-        <label>
-            <input type="radio" name="sex" value="мужской"> Мужской
-        </label></p>
-        <p><label> Логин <input class="form-control form-control-sm" type="text" name="login"></label></p>
-        <p><label> Пароль <input class="form-control form-control-sm" type="password" name="password"></label></p>
-        <p><label> Повторите пароль <input class="form-control form-control-sm" type="password" name="password2"></label></p>
-        <p><label> E-mail <input class="form-control form-control-sm" type="email" name="email"></label></p>
-        <button type="button" class="btn btn-outline-success"> Зарегистрироваться </button>
-        </div>-->
     </form>
 </div>
+
 </body>
+<script>
+    let form = document.registration;
+    function check(form) {
+        let lastname = form.lastname.value;
+        let firstname = form.firstname.value;
+        let patronymic = form.patronymic.value;
+        let email = form.email.value;
+        let login = form.login.value;
+        let password = form.password.value;
+        let password2 = form.password2.value;
+
+        alert(email);
+    }
+
+</script>
 </html>
