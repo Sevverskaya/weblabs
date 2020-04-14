@@ -14,7 +14,7 @@
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous">
     </script>
-    <!--<script src="script.js"></script>-->
+    <script src="script.js"></script>
 </head>
 <body class="back">
 
@@ -25,19 +25,19 @@
         </div>
 
         <div class="group">
-            <input type="text" name="lastname">
+            <input type="text" name="lastname" required>
             <span class="bar"></span>
             <label>Фамилия</label>
         </div>
 
         <div class="group">
-            <input type="text" name="firstname">
+            <input type="text" name="firstname" required>
             <span class="bar"></span>
             <label>Имя</label>
         </div>
 
         <div class="group">
-            <input type="text" name="patronymic">
+            <input type="text" name="patronymic" required>
             <span class="bar"></span>
             <label>Отчество</label>
         </div>
@@ -54,25 +54,25 @@
         </div>
 
         <div class="group">
-            <input type="text" name="email">
+            <input type="text" name="email" required>
             <span class="bar"></span>
             <label>E-mail</label>
         </div>
 
         <div class="group">
-            <input type="text" name="login">
+            <input type="text" name="login" required>
             <span class="bar"></span>
             <label>Логин</label>
         </div>
 
         <div class="group">
-            <input type="password" name="password">
+            <input type="password" name="password" required>
             <span class="bar"></span>
             <label>Пароль</label>
         </div>
 
         <div class="group">
-            <input type="password" name="password2">
+            <input type="password" name="password2" required>
             <span class="bar"></span>
             <label>Повторите пароль</label>
         </div>
@@ -83,9 +83,9 @@
 </div>
 
 </body>
-<script>
-    let form = document.registration;
-    function check(form) {
+<!--<script>
+    function check() {
+        let form = document.registration;
         let lastname = form.lastname.value;
         let firstname = form.firstname.value;
         let patronymic = form.patronymic.value;
@@ -93,9 +93,11 @@
         let login = form.login.value;
         let password = form.password.value;
         let password2 = form.password2.value;
+        if (5<6) {
+            alert("hui");
+        }
 
-        alert(email);
     }
 
-</script>
+</script>-->
 </html>
