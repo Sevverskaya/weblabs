@@ -1,0 +1,129 @@
+.form-wrap {
+    width: 400px;
+    min-height: 550px;
+    border-radius: 0.5em;
+    background: white;
+    border: #5264AE solid 3px;
+    float: right;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-top: 20px;
+}
+
+.back {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: linear-gradient(to top, #523497 0%, #79BBFB 15%), url("https://sun9-9.userapi.com/c858020/v858020671/1c02bb/nPIdGs2CGrU.jpg");
+    background-blend-mode: multiply;
+}
+
+.infoback {
+    background-image: url("https://i.pinimg.com/originals/1d/b4/ed/1db4ed6ed8fedd24d7db1f15d31a1f0d.jpg");
+    background-size: cover;
+}
+
+.head {
+    font-size:18px;
+    font-weight:normal;
+    margin: 15px auto;
+    max-width: 100px;
+ }
+
+.group {
+    position:relative;
+    margin-bottom:20px;
+}
+
+.group input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+
+.group input:focus {
+    outline:none;
+}
+
+.group label {
+    color:#999;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:50px;
+    top:10px;
+    transition:0.2s ease all;
+}
+
+/*Родственные селекторы*/
+.group input:focus ~ label, .group input:valid ~ label     {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}
+
+/* bottom bars */
+.bar {
+    position:relative;
+    display:block;
+    width:300px;
+}
+
+.bar:before,
+.bar:after {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#5264AE;
+    transition:0.2s ease all;
+}
+
+.bar:before {
+    left:50%;
+}
+
+.bar:after {
+    right:50%;
+}
+
+/* active state */
+.group input:focus ~ .bar:before,
+.group input:focus ~ .bar:after {
+    width:50%;
+}
+
+.welcome {
+    float: left;
+    margin-top: 180px;
+    margin-left: 120px;
+    font-weight: bold;
+    color: white;
+}
+
+.devbtn {
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .3s .2s;
+    -webkit-background-clip: text;
+    font-size: 15px;
+
+}
+
+.devbtn:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .2s 0s;
+}
+
+.dev {
+    margin-top: 180px;
+    font-size: 20px;
+}
+
