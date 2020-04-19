@@ -4,6 +4,7 @@
     border-radius: 0.5em;
     background: white;
     border: #5264AE solid 3px;
+    float: right;
     margin-left: auto;
     margin-right: 3%;
     margin-top: 20px;
@@ -16,8 +17,14 @@
     background-blend-mode: multiply;
 }
 
+.infoback {
+    background-image: url("https://i.pinimg.com/originals/1d/b4/ed/1db4ed6ed8fedd24d7db1f15d31a1f0d.jpg");
+    background-size: cover;
+}
+
 .head {
-    font-family: "Bookman Old Style";
+    font-size:18px;
+    font-weight:normal;
     margin: 15px auto;
     max-width: 100px;
  }
@@ -58,7 +65,7 @@
     color:#5264AE;
 }
 
-/* BOTTOM BARS ================================= */
+/* bottom bars */
 .bar {
     position:relative;
     display:block;
@@ -90,7 +97,33 @@
     width:50%;
 }
 
-#registration button{
-    margin-bottom: 20px;
+.welcome {
+    float: left;
+    margin-top: 180px;
+    margin-left: 120px;
+    font-weight: bold;
+    color: white;
+}
+
+.devbtn {
+    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .3s .2s;
+    -webkit-background-clip: text;
+    font-size: 15px;
+
+}
+
+.devbtn:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: .2s 0s;
+}
+
+.dev {
+    margin-top: 180px;
+    font-size: 20px;
 }
 

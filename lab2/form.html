@@ -17,7 +17,6 @@
     <script src="script.js"></script>
 </head>
 <body class="back">
-
 <div class="form-wrap" align="center">
     <form name="registration" onsubmit="return check()">
         <div class="head">
@@ -40,17 +39,6 @@
             <input type="text" name="patronymic" required>
             <span class="bar"></span>
             <label>Отчество</label>
-        </div>
-
-        <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample"
-                   checked>
-            <label class="custom-control-label" for="defaultInline1"> Женский </label>
-        </div>
-
-        <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-            <label class="custom-control-label" for="defaultInline2"> Мужской </label>
         </div>
 
         <div class="group">
@@ -77,27 +65,25 @@
             <label>Повторите пароль</label>
         </div>
 
-        <button type="submit" class="btn btn-success">Зарегистрироваться</button>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample"
+                   checked>
+            <label class="custom-control-label" for="defaultInline1"> Женский </label>
+        </div>
 
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline2"> Мужской </label>
+        </div>
+        <button type="submit" class="btn btn-outline-secondary"
+                style="margin-bottom: 20px; margin-top: 10px"> Зарегистрироваться
+        </button>
+        <br>
     </form>
 </div>
-
+<div class = "welcome">
+    <p style="font-size: 55px">Добро пожаловать!</p>
+    <button class="btndev" onclick="info()">Узнать больше о разработчике</button>
+</div>
 </body>
-<!--<script>
-    function check() {
-        let form = document.registration;
-        let lastname = form.lastname.value;
-        let firstname = form.firstname.value;
-        let patronymic = form.patronymic.value;
-        let email = form.email.value;
-        let login = form.login.value;
-        let password = form.password.value;
-        let password2 = form.password2.value;
-        if (5<6) {
-            alert("hui");
-        }
-
-    }
-
-</script>-->
 </html>
