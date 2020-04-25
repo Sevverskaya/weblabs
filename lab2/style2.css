@@ -36,7 +36,7 @@
 
 .group input {
     font-size:18px;
-    padding:10px 10px 10px 5px;
+    padding:5px 10px 10px 5px;
     display:block;
     width:300px;
     border:none;
@@ -105,21 +105,23 @@
     color: white;
 }
 
-.devbtn {
-    background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
-    background-position: 100% 0;
-    background-size: 200% 200%;
-    color: transparent;
-    -webkit-transition: .3s .2s;
-    -webkit-background-clip: text;
-    font-size: 15px;
+.btndev {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
 
 }
 
-.devbtn:hover {
-    background-position: 0 0;
-    color: transparent;
-    transition: .2s 0s;
+.btndev:hover {
+    border: none;
+    color: #5264AE;
+}
+
+.btndev:focus {
+    border: none;
+    outline: none;
 }
 
 .dev {
@@ -127,3 +129,33 @@
     font-size: 20px;
 }
 
+.video {
+    background-color: white;
+    margin: 10px auto;
+    min-height: 500px;
+    width:700px;
+    border-radius: 20px;
+    border: 2px solid #5264AE;
+    padding: 30px;
+
+}
+
+.btnSignIn {
+    margin-bottom: 7px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    color: #999;
+
+}
+
+.btnSignIn:hover {
+    border: none;
+    color: #5264AE;
+    font-weight: bolder;
+}
+
+.btnSignIn:focus {
+    border: none;
+    outline: none;
+}

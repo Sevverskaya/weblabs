@@ -14,15 +14,49 @@ function check() {
     } else if (!/^(?=.*[0-9])(?=.*[a-z]).{8,}$/.test(password)) {
         alert("Пожалуйста, обратите внимание, что пароль должен содержать латинские буквы и цифры и состоять более чем из 8 символов.");
         return false;
-    } else if (!(password == password2)){
+    } else if (!(password == password2)) {
         alert("Пожалуйста, обратите внимание, что введённые пароли не совпадают.");
         return false;
     } else {
+        window.open("success.html", "_blank");
         return true;
     }
 
 }
 
-function info() {
-    window.open("info.html", '_self');
+function infoOpen() {
+    window.open("info.html", "info", "width=800, height=600");
 }
+
+function confirmation() {
+    let x = confirm("Вы действительно хотите закрыть данное окно?");
+    if (x == true) {
+        window.close();
+    }
+}
+
+window.addEventListener("load", function () {
+    let video = document.getElementById("myVid");
+
+    document.getElementById("myVid").addEventListener('canplaythrough', (event) => {
+        alert("Видеофайл готов к просмотру.");
+    }, {once: true});
+
+    document.getElementById("myVid").addEventListener('ended', (event) => {
+        let x = prompt("Спасибо за просмотр! Пожалуйста, оцените данное видео от одного до десяти:");
+        alert('Вы поставили оценку ' + x);
+    }, {once: true});
+
+})
+
+
+let welc;
+let welcomes = ["Welcome!", "Willkommen!", "Benvenuto!", "Vítejte!", "Добро пожаловать!"];
+
+function rand() {
+    welc = welcomes[Math.floor(Math.random() * welcomes.length)];
+    document.getElementById('welcome').innerHTML = welc;
+}
+setInterval(rand, 2000);
+
+

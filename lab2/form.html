@@ -16,11 +16,12 @@
     </script>
     <script src="script.js"></script>
 </head>
+
 <body class="back">
 <div class="form-wrap" align="center">
     <form name="registration" onsubmit="return check()">
         <div class="head">
-            <p>Регистрация</p>
+            Регистрация
         </div>
 
         <div class="group">
@@ -75,15 +76,18 @@
             <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
             <label class="custom-control-label" for="defaultInline2"> Мужской </label>
         </div>
+
         <button type="submit" class="btn btn-outline-secondary"
-                style="margin-bottom: 20px; margin-top: 10px"> Зарегистрироваться
+                style="margin-bottom: 10px; margin-top: 10px; background-color: #5264AE; color: white; width: 300px">
+            Зарегистрироваться
         </button>
-        <br>
+
+        <button type="button" class="btnSignIn" onclick="signIn()">У меня уже есть аккаунт</button>
     </form>
 </div>
-<div class = "welcome">
-    <p style="font-size: 55px">Добро пожаловать!</p>
-    <button class="btndev" onclick="info()">Узнать больше о разработчике</button>
+<div class="welcome">
+    <p id="welcome" style="font-size: 55px">Добро пожаловать!</p>
+    <button class="btndev" onclick="infoOpen()">Узнать больше о разработчике</button>
 </div>
 </body>
 </html>
