@@ -14,12 +14,15 @@
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous">
     </script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body class="back">
+
 <div class="form-wrap" align="center">
+
     <form name="registration" onsubmit="return check()">
+
         <div class="head">
             Регистрация
         </div>
@@ -82,9 +85,38 @@
             Зарегистрироваться
         </button>
 
-        <button type="button" class="btnSignIn" onclick="signIn()">У меня уже есть аккаунт</button>
     </form>
+
+
+    <form name="signIn" hidden>
+
+        <div class="head">
+            Вход
+        </div>
+
+        <div class="group">
+            <input type="text" name="login" required>
+            <span class="bar"></span>
+            <label>Логин</label>
+        </div>
+
+        <div class="group">
+            <input type="password" name="password" required>
+            <span class="bar"></span>
+            <label>Пароль</label>
+        </div>
+
+        <button type="submit" class="btn btn-outline-secondary"
+                style="margin-bottom: 10px; margin-top: 10px; background-color: #5264AE; color: white; width: 300px">
+            Войти
+        </button>
+
+    </form>
+
+    <button type="button" id="oldAcc" class="btnSignIn">У меня уже есть аккаунт</button>
+
 </div>
+
 <div class="welcome">
     <p id="welcome" style="font-size: 55px">Добро пожаловать!</p>
     <button class="btndev" onclick="infoOpen()">Узнать больше о разработчике</button>

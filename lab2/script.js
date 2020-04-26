@@ -49,14 +49,34 @@ window.addEventListener("load", function () {
 
 })
 
-
-let welc;
-let welcomes = ["Welcome!", "Willkommen!", "Benvenuto!", "Vítejte!", "Добро пожаловать!"];
-
 function rand() {
+    let welc;
+    let welcomes = ["Welcome!", "Willkommen!", "Benvenuto!", "Vítejte!", "Добро пожаловать!"];
     welc = welcomes[Math.floor(Math.random() * welcomes.length)];
     document.getElementById('welcome').innerHTML = welc;
 }
 setInterval(rand, 2000);
+
+
+oldAcc = document.getElementById('oldAcc');
+oldAcc.onclick = function() {
+    let reg = document.getElementsByName("registration");
+    let sign = document.getElementsByName("signIn");
+
+    if (sign[0].hasAttribute("hidden")) {
+        sign[0].removeAttribute("hidden");
+        reg[0].setAttribute("hidden", "");
+        oldAcc.innerHTML = "У меня еще нет аккаунта";
+    }
+    else if (reg[0].hasAttribute("hidden")) {
+        reg[0].removeAttribute("hidden");
+        sign[0].setAttribute("hidden", "");
+        oldAcc.innerHTML = "У меня уже есть аккаунт";
+    }
+
+}
+
+
+
 
 
