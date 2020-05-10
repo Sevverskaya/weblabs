@@ -9,10 +9,10 @@
 </head>
 <body class="back">
 <div class="video">
-    <video id="myVid" width="640"; height="360" controls>
-        <source src="V_20190721_112726.mp4" type="video/mp4">
-    </video>
+    <iframe width="640" height="350" src="https://www.youtube.com/embed/xOXfXaW0Nzw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <button onclick="confirmation()" class="btn btn-outline-secondary" style="margin-top: 30px; float: right">Закрыть</button>
 </div>
+
+
 </body>
 </html>

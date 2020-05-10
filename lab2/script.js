@@ -18,7 +18,7 @@ function check() {
         alert("Пожалуйста, обратите внимание, что введённые пароли не совпадают.");
         return false;
     } else {
-        window.open("success.html", "_blank");
+        window.open("success.php", "_blank");
         return true;
     }
 
