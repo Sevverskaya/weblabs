@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<a href = "lab1/laba1.html">laba1</a>
+<p><a href = "lab1/laba1.html">Лабораторные 1-2</a></p>
+<p><a href = "lab2/form.html">Лабораторные 3-4</a></p>
 </body>
 </html>
