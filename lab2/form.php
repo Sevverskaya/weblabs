@@ -21,7 +21,7 @@
 
 <div class="form-wrap" align="center">
 
-    <form name="registration" onsubmit="return check()">
+    <form name="registration" onsubmit="return check()" method="post" action="success.php" enctype="multipart/form-data">
 
         <div class="head">
             Регистрация
@@ -70,20 +70,39 @@
         </div>
 
         <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample"
+            <input value="Женский" type="radio" class="custom-control-input" id="femalecheck" name="checksex"
                    checked>
-            <label class="custom-control-label" for="defaultInline1"> Женский </label>
+            <label class="custom-control-label" for="femalencheck"> Женский </label>
         </div>
 
         <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
-            <label class="custom-control-label" for="defaultInline2"> Мужской </label>
+            <input value="Мужской" type="radio" class="custom-control-input" id="mancheck" name="checksex">
+            <label class="custom-control-label" for="mancheck"> Мужской </label>
+        </div>
+
+        <div class="form-group" style="width: 300px; margin-top: 20px">
+            <select class="form-control" id="checkcity" >
+                <option>Москва</option>
+                <option>Воронеж</option>
+                <option>Кисловодск</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <textarea class="form-control" id="aboutme" name="aboutme" rows="3" placeholder="Расскажите о себе" style="width: 300px; margin-top: 20px"></textarea>
+        </div>
+
+        <div class="form-group">
+            <p class="btnSignIn">Прикрепите резюме</p>
+            <input type="file" class="form-control-file" name="file" style="width: 300px;">
         </div>
 
         <button type="submit" class="btn btn-outline-secondary"
                 style="margin-bottom: 10px; margin-top: 10px; background-color: #5264AE; color: white; width: 300px">
             Зарегистрироваться
         </button>
+
+        <button type="button" id="clear" class="btnSignIn">Сбросить</button>
 
     </form>
 

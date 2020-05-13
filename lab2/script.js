@@ -18,14 +18,14 @@ function check() {
         alert("Пожалуйста, обратите внимание, что введённые пароли не совпадают.");
         return false;
     } else {
-        window.open("success.php", "_blank");
+        //window.open("success.php", "_blank");
         return true;
     }
 
 }
 
 function infoOpen() {
-    window.open("info.html", "info", "width=800, height=600");
+    window.open("info.php", "info", "width=800, height=600");
 }
 
 function confirmation() {
