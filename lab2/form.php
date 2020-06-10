@@ -1,3 +1,19 @@
+<?php
+
+if (file_exists('count.txt')) {
+    $file = fopen('count.txt', r);
+    $data = fread($file, filesize('count.txt'));
+    $result = $data + 1;
+    fclose($file);
+    $file = fopen('count.txt', w);
+    fwrite($file, $result);
+} else {
+    $file = fopen('count.txt', w);
+    fwrite($file, 1);
+    $result = 1;
+    fclose($file);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +37,7 @@
 
 <div class="form-wrap" align="center">
 
-    <form name="registration" onsubmit="return check()" method="post" action="success.php" enctype="multipart/form-data">
+    <form id="registration" name="registration" onsubmit="return check()" method="post" action="success.php" enctype="multipart/form-data">
 
         <div class="head">
             Регистрация
@@ -81,7 +97,7 @@
         </div>
 
         <div class="form-group" style="width: 300px; margin-top: 20px">
-            <select class="form-control" id="checkcity" >
+            <select name="city" class="form-control" id="checkcity" >
                 <option>Москва</option>
                 <option>Воронеж</option>
                 <option>Кисловодск</option>
@@ -137,6 +153,9 @@
 </div>
 
 <div class="welcome">
+    <p style="margin-left: 10px"> Количество посещений данной страницы: <?= $result ?></p>
+    <p style="margin-left: 10px"><? if ($result % 10 == 0) echo "Это ваше юбилейное посещение!" ?></p>
+    <p style="margin-left: 10px">Вы открыли эту страницу <?= date('d.m.Y в H:i:s') ?></p>
     <p id="welcome" style="font-size: 55px">Добро пожаловать!</p>
     <button class="btndev" onclick="infoOpen()">Узнать больше о разработчике</button>
 </div>

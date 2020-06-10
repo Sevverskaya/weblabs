@@ -76,6 +76,11 @@ oldAcc.onclick = function() {
 
 }
 
+let clear = document.getElementById('clear');
+clear.onclick = function () {
+    document.getElementById('registration').reset();
+}
+
 
 
 
